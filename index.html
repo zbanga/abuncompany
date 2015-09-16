@@ -3,30 +3,7 @@
     <title>Sample "Hello, World" Application</title>
   </head>
   <body bgcolor=white>
-
-<?php
-  $servername = "br-cdbr-azure-south-a.cloudapp.net";
-  $username = "b4e4d6de4ecb3c";
-  $password = "e8ea3fcc";
-  $dbname = "Abun";
-  
-  // Create connection
-  
-  $conn = new mysqli($servername, $username, $password, $dbname);
-  // Check connection
-  if ($conn-\>connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-  } 
-  
-  
-  if ($conn->query($sql) === TRUE) {
-      echo "New record created successfully";
-  } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-  
-  $conn->close();
-?>
+  <body> HELLO </body>
 
   </body>
 </html>
